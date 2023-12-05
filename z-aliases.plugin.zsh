@@ -16,9 +16,9 @@
 # along with this program.  If not, see <https://www.gnu.org/licenses/>.
 #
 
-# exa aliases (https://github.com/ogham/exa)
-if (( ${+commands[exa]} )); then
-  alias ls='exa --group-directories-first'
+# eza aliases (https://github.com/eza-community/eza)
+if (( ${+commands[eza]} )); then
+  alias ls='eza --group-directories-first'
 
   alias lah='ls -lah'
 
