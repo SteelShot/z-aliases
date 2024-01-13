@@ -30,11 +30,15 @@ fi
 # fd aliases (https://github.com/sharkdp/fd)
 if (( ${+commands[fd]} )); then
   alias find='fd --color always'
+elif (( ${+commands[fdfind]} )); then
+  alias fd='fdfind'
+  alias find='fd --color always'
 fi
 
 # bat aliases (https://github.com/sharkdp/bat)
 if (( ${+commands[bat]} )); then
   alias cat='bat'
 elif (( ${+commands[batcat]} )); then
-  alias cat='batcat'
+  alias bat="batcat"
+  alias cat='bat'
 fi
