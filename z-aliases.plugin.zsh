@@ -25,6 +25,14 @@ if (( ${+commands[eza]} )); then
   if (( ${+commands[git]} )); then
     alias lg='lah --git'
   fi
+elif (( ${+commands[exa]} )); then
+  alias ls='exa --group-directories-first'
+
+  alias lah='ls -lah'
+
+  if (( ${+commands[git]} )); then
+    alias lg='lah --git'
+  fi
 fi
 
 # fd aliases (https://github.com/sharkdp/fd)
